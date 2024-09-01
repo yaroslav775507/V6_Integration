@@ -18,7 +18,7 @@ public class TextSorter {
         String inputFile = defaultInputFile;
         String outputFile = defaultOutputFile;
 
-        
+
         System.out.println("Выберите тип сортировки:");
         System.out.println("1 - По алфавиту");
         System.out.println("2 - По количеству символов в строке");
@@ -63,7 +63,6 @@ public class TextSorter {
         }
 
 
-        Collections.sort(linesWithCounts, comparator);
 
         Files.write(Paths.get(outputFile), linesWithCounts);
 
